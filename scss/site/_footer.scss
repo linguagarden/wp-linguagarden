@@ -1,0 +1,45 @@
+/* --------------------------
+ * Site Footer
+ * --------------------------*/
+
+.sitefooter{
+	background-color:#585046;
+	padding: 2rem 0;
+}
+
+.sitefooter, .sitefooter p, .sitefooter a{
+	color: #faf6f0;
+}
+
+.sitefooter .sitelogo{
+	padding:0 1rem;
+}
+
+.sitefooter .contactlinks{
+	padding: 1rem 1rem 0;
+	margin-bottom: 0;
+}
+
+.sitefooter .contactlinks .email, .contactlinks .phone{
+	padding-top: .1rem;
+}
+
+.sitefooter .sociallink a{
+	display: block;
+	height: 32px;
+	width: 32px;
+	text-indent: -9999px;
+	background:transparent no-repeat;
+	margin: 0;
+	padding:0;
+}
+
+.sitefooter .sociallink.facebook a{
+	background-image: url(../img/facebook-2x-creme.png);
+	background-size: 100%;
+}
+
+.sitefooter .sociallink.twitter a{
+	background-image: url(../img/twitter-2x-creme.png);
+	background-size: 100%;
+}
