@@ -4,13 +4,36 @@
 
 	img[class*="wp-image-"] {
 		@include center-block;
+		padding: 10px 0;
+		-webkit-border-bottom-right-radius: 0;
+    	-webkit-border-bottom-left-radius: 0;
+    	-moz-border-radius-bottomright: 0;
+    	-moz-border-radius-bottomleft: 0;
+    	border-bottom-right-radius: 0;
+    	border-bottom-left-radius: 0;
 	}
 
 	.wp-caption-text {
-		margin: 0.8075em 0;
+		color:white;
+    	padding: .4rem .5rem;
+    	margin: 0;
+    	text-align: left;
+    	background-color: black;
+    	-webkit-border-bottom-right-radius: 3px;
+    	-webkit-border-bottom-left-radius: 3px;
+    	-moz-border-radius-bottomright: 3px;
+    	-moz-border-radius-bottomleft: 3px;
+    	border-bottom-right-radius: 3px;
+    	border-bottom-left-radius: 3px;
 	}
 }
 
 .wp-caption-text {
 	text-align: center;
+}
+
+.post-comp {
+	width: 599px;
+	height: 837px;
+	padding-top: 14px;
 }

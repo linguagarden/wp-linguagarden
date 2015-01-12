@@ -1,0 +1,48 @@
+.component>.row {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+	background-color: #faf6f0;
+	border-top: 4px solid #585046;
+}
+
+ .component .header {
+ 	padding-bottom: 3rem;
+	text-align: center;
+ }
+
+  .component .header p {
+ 	font-size: 1.1rem;
+ 	line-height: 1.6;
+ }
+
+/*--------------------------------------------------------------
+10.1 Intro
+--------------------------------------------------------------*/
+@import "intro";
+
+/*--------------------------------------------------------------
+10.1 Testimonials
+--------------------------------------------------------------*/
+@import "testimonials";
+
+/*--------------------------------------------------------------
+10.2 Features
+--------------------------------------------------------------*/
+@import "features";
+
+.component.features>.row {
+	background-color: #faf6f0;
+}
+
+.component.features .feature-item .icon {
+	padding-right:15px;
+}
+
+.component.features .feature-item h3{
+	margin-top: -5px;
+}
+
+/*--------------------------------------------------------------
+10.2 Video Player Section
+--------------------------------------------------------------*/
+@import "video-player";
