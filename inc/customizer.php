@@ -17,17 +17,32 @@ function linguagarden_customize_register( $wp_customize ) {
 	    'transport'   => 'refresh',
 	) );
 	
+	$wp_customize->add_setting( 'footer-logo' , array(
+	    'default'     => 'http://placehold.it/300x150',
+	    'transport'   => 'refresh',
+	) );
+	
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 	$wp_customize->get_setting( 'logo' )->transport 			= 'postMessage';
+	$wp_customize->get_setting( 'footer-logo' )->transport 		= 'postMessage';
 	
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize,
            'logo',
            array(
-               'label'      => __( 'Upload a logo', 'linguagarden2014' ),
+               'label'      => __( 'Upload a logo', 'linguagarden' ),
                'section'    => 'title_tagline',
                'settings'   => 'logo',
+               // 'context'    => 'your_setting_context'
+	) ) );
+	
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize,
+           'footer-logo',
+           array(
+               'label'      => __( 'Upload a footer logo', 'linguagarden' ),
+               'section'    => 'title_tagline',
+               'settings'   => 'footer-logo',
                // 'context'    => 'your_setting_context'
 	) ) );
 }

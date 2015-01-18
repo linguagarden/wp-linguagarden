@@ -12,7 +12,13 @@
     				<div class="row">
     					<div class="columns small-12 medium-3">
     						<div class="sitelogo">
-    							<img src="http://localhost:8080/wordpress/wp-content/themes/linguagarden2014/img/linguagarden-logo-horizontal-white.png" alt="Lingua Garden Language Learning Center">
+    							<?php 
+    							    $footer_logo = get_theme_mod('footer-logo');
+    							    if ($footer_logo == false) {
+    							        $footer_logo = get_theme_mod('logo');
+    							    }
+    							 ?>
+    							<img src="<?php echo $footer_logo ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
     						</div>
     					</div>
     					<div class="columns small-12 medium-6">
