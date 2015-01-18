@@ -6543,7 +6543,7 @@ embed, iframe, object {
 /*--------------------------------------------------------------
 10.1 Intro
 --------------------------------------------------------------*/
-.component.intro * > .row {
+.component.intro > .row {
   background-color: white;
   background-size: 100%;
   background-position: bottom center;
@@ -6592,7 +6592,7 @@ embed, iframe, object {
   border-top-right-radius: 3px; }
 
 @media only screen and (max-width: 40.062em) {
-  .component.intro * > .row {
+  .component.intro > .row {
     padding-top: 0rem;
     padding-bottom: 0rem; }
  }
@@ -6670,9 +6670,6 @@ embed, iframe, object {
 /* --------------------------
  * Foundation Overrides
  * --------------------------*/
-.row {
-  max-width: 70rem; }
-
 .button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;

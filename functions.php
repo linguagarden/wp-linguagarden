@@ -93,6 +93,16 @@ function linguagarden_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Intro CTA', 'linguagarden' ),
+		'id'            => 'intro-cta',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
 }
 add_action( 'widgets_init', 'linguagarden_widgets_init' );
 
@@ -116,6 +126,8 @@ add_action( 'wp_enqueue_scripts', 'linguagarden_scripts' );
  * Implement the Custom Header feature.
  */
 //require get_template_directory() . '/inc/custom-header.php';
+
+require get_template_directory() . '/inc/foundation.php';
 
 /**
  * Custom template tags for this theme.

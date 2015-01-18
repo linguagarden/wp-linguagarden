@@ -7,7 +7,7 @@
 ?>
 
 <section class="component testimonials">
-	<div class="row">
+	<div class="row collapse">
 		<div class="columns small-11 medium-11 medium-centered">
 			<header class="header">
 				<h1><?php the_field('section_title'); ?></h1>

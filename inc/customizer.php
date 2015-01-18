@@ -11,9 +11,25 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function linguagarden_customize_register( $wp_customize ) {
+    
+    $wp_customize->add_setting( 'logo' , array(
+	    'default'     => 'http://placehold.it/300x150',
+	    'transport'   => 'refresh',
+	) );
+	
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	$wp_customize->get_setting( 'logo' )->transport 			= 'postMessage';
+	
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize,
+           'logo',
+           array(
+               'label'      => __( 'Upload a logo', 'linguagarden2014' ),
+               'section'    => 'title_tagline',
+               'settings'   => 'logo',
+               // 'context'    => 'your_setting_context'
+	) ) );
 }
 add_action( 'customize_register', 'linguagarden_customize_register' );
 

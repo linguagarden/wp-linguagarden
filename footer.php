@@ -26,8 +26,7 @@
     				</div>
     			</footer>
     		</div>
-    	</div>
-    </div>
+    	
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
