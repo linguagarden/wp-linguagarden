@@ -6379,12 +6379,6 @@ th.hide-for-touch {
 .entry-header {
   padding: 1rem; }
 
-.entry-title {
-  font-size: 2rem;
-  font-family: "Open Sans";
-  /* letter-spacing: .0rem; */
-  line-height: 2.4rem; }
-
 .entry-meta {
   border-top: 2px solid #DBDAD6;
   border-bottom: 2px solid #DBDAD6;
@@ -6415,6 +6409,37 @@ th.hide-for-touch {
 
 .entry-content img {
   border-radius: 3px; }
+
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.aligncenter, div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*--------------------------------------------------------------
 10.4 Asides
@@ -6451,12 +6476,14 @@ embed, iframe, object {
 12.1 Captions
 --------------------------------------------------------------*/
 .wp-caption {
-  margin-bottom: 1.5em;
-  max-width: 100%; }
+  margin-bottom: 2.75em;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0; }
   .wp-caption img[class*="wp-image-"] {
     display: block;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 10px 0 0;
     -webkit-border-bottom-right-radius: 0;
     -webkit-border-bottom-left-radius: 0;
     -moz-border-radius-bottomright: 0;
@@ -6465,10 +6492,10 @@ embed, iframe, object {
     border-bottom-left-radius: 0; }
   .wp-caption .wp-caption-text {
     color: white;
-    padding: 0.4rem 0.5rem;
+    padding: 1rem 1.5rem;
     margin: 0;
     text-align: left;
-    background-color: black;
+    background-color: #3a3731;
     -webkit-border-bottom-right-radius: 3px;
     -webkit-border-bottom-left-radius: 3px;
     -moz-border-radius-bottomright: 3px;
